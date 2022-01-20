@@ -1,0 +1,891 @@
+'logInfo(data, ...) ':
+    'prefix': 'logInfo(data, ...) '
+    'body': 'logInfo(data, ...) '
+'logWarning(data, ...) ':
+    'prefix': 'logWarning(data, ...) '
+    'body': 'logWarning(data, ...) '
+'logError(data, ...) ':
+    'prefix': 'logError(data, ...) '
+    'body': 'logError(data, ...) '
+'logDebug(data, ...) ':
+    'prefix': 'logDebug(data, ...) '
+    'body': 'logDebug(data, ...) '
+'logTrace(data, ...) ':
+    'prefix': 'logTrace(data, ...) '
+    'body': 'logTrace(data, ...) '
+'getLogLevel() ':
+    'prefix': 'getLogLevel() '
+    'body': 'getLogLevel() '
+'setLogLevel(level) ':
+    'prefix': 'setLogLevel(level) '
+    'body': 'setLogLevel(level) '
+'getEnvVariable(name) ':
+    'prefix': 'getEnvVariable(name) '
+    'body': 'getEnvVariable(name) '
+'setEnvVariable(name, value) ':
+    'prefix': 'setEnvVariable(name, value) '
+    'body': 'setEnvVariable(name, value) '
+'unsetEnvVariable(name) ':
+    'prefix': 'unsetEnvVariable(name) '
+    'body': 'unsetEnvVariable(name) '
+'getOS() ':
+    'prefix': 'getOS() '
+    'body': 'getOS() '
+'getXPVersion() ':
+    'prefix': 'getXPVersion() '
+    'body': 'getXPVersion() '
+'setClipboardText(text) ':
+    'prefix': 'setClipboardText(text) '
+    'body': 'setClipboardText(text) '
+'getClipboardText() ':
+    'prefix': 'getClipboardText() '
+    'body': 'getClipboardText() '
+'listFiles(path) ':
+    'prefix': 'listFiles(path) '
+    'body': 'listFiles(path) '
+'setAircraftPanelRendering(isOn) ':
+    'prefix': 'setAircraftPanelRendering(isOn) '
+    'body': 'setAircraftPanelRendering(isOn) '
+'set3DRendering(isOn) ':
+    'prefix': 'set3DRendering(isOn) '
+    'body': 'set3DRendering(isOn) '
+'setInteractivity(isOn) ':
+    'prefix': 'setInteractivity(isOn) '
+    'body': 'setInteractivity(isOn) '
+'setRenderingMode2D(ID) ':
+    'prefix': 'setRenderingMode2D(ID) '
+    'body': 'setRenderingMode2D(ID) '
+'setPanelRenderingMode(ID) ':
+    'prefix': 'setPanelRenderingMode(ID) '
+    'body': 'setPanelRenderingMode(ID) '
+'setLuaErrorsHandling(ID) ':
+    'prefix': 'setLuaErrorsHandling(ID) '
+    'body': 'setLuaErrorsHandling(ID) '
+'getMonitorsIDsGlobal() ':
+    'prefix': 'getMonitorsIDsGlobal() '
+    'body': 'getMonitorsIDsGlobal() '
+'getMonitorsIDsOS() ':
+    'prefix': 'getMonitorsIDsOS() '
+    'body': 'getMonitorsIDsOS() '
+'getMonitorBoundsGlobal(id) ':
+    'prefix': 'getMonitorBoundsGlobal(id) '
+    'body': 'getMonitorBoundsGlobal(id) '
+'getMonitorBoundsOS(id) ':
+    'prefix': 'getMonitorBoundsOS(id) '
+    'body': 'getMonitorBoundsOS(id) '
+'getScreenBoundsGlobal() ':
+    'prefix': 'getScreenBoundsGlobal() '
+    'body': 'getScreenBoundsGlobal() '
+'findCommand(name) ':
+    'prefix': 'findCommand(name) '
+    'body': 'findCommand(name) '
+'commandBegin(commandID) ':
+    'prefix': 'commandBegin(commandID) '
+    'body': 'commandBegin(commandID) '
+'commandEnd(commandID) ':
+    'prefix': 'commandEnd(commandID) '
+    'body': 'commandEnd(commandID) '
+'createCommand(name, description) ':
+    'prefix': 'createCommand(name, description) '
+    'body': 'createCommand(name, description) '
+'registerCommandHandler(commandID, isBefore, handle) ':
+    'prefix': 'registerCommandHandler(commandID, isBefore, handle) '
+    'body': 'registerCommandHandler(commandID, isBefore, handle) '
+'unregisterCommandHandler(commandID, isBefore) ':
+    'prefix': 'unregisterCommandHandler(commandID, isBefore) '
+    'body': 'unregisterCommandHandler(commandID, isBefore) '
+'appendMenuItem(inMenuID, name, callback) ':
+    'prefix': 'appendMenuItem(inMenuID, name, callback) '
+    'body': 'appendMenuItem(inMenuID, name, callback) '
+'appendMenuItemWithCommand(inMenuID, name, command) ':
+    'prefix': 'appendMenuItemWithCommand(inMenuID, name, command) '
+    'body': 'appendMenuItemWithCommand(inMenuID, name, command) '
+'removeMenuItem(inMenuID, inMenuItemID) ':
+    'prefix': 'removeMenuItem(inMenuID, inMenuItemID) '
+    'body': 'removeMenuItem(inMenuID, inMenuItemID) '
+'setMenuItemName(inMenuID, inMenuItemID, name) ':
+    'prefix': 'setMenuItemName(inMenuID, inMenuItemID, name) '
+    'body': 'setMenuItemName(inMenuID, inMenuItemID, name) '
+'setMenuItemState(inMenuID, inMenuItemID, inState) ':
+    'prefix': 'setMenuItemState(inMenuID, inMenuItemID, inState) '
+    'body': 'setMenuItemState(inMenuID, inMenuItemID, inState) '
+'getMenuItemState(inMenuID, inMenuItemID) ':
+    'prefix': 'getMenuItemState(inMenuID, inMenuItemID) '
+    'body': 'getMenuItemState(inMenuID, inMenuItemID) '
+'enableMenuItem(inMenuID, inMenuItemID, isEnable) ':
+    'prefix': 'enableMenuItem(inMenuID, inMenuItemID, isEnable) '
+    'body': 'enableMenuItem(inMenuID, inMenuItemID, isEnable) '
+'createMenu(name, parentMenuID, parentMenuItemID) ':
+    'prefix': 'createMenu(name, parentMenuID, parentMenuItemID) '
+    'body': 'createMenu(name, parentMenuID, parentMenuItemID) '
+'appendMenuSeparator(inMenuID) ':
+    'prefix': 'appendMenuSeparator(inMenuID) '
+    'body': 'appendMenuSeparator(inMenuID) '
+'clearAllMenuItems(inMenuID) ':
+    'prefix': 'clearAllMenuItems(inMenuID) '
+    'body': 'clearAllMenuItems(inMenuID) '
+'destroyMenu(inMenuID) ':
+    'prefix': 'destroyMenu(inMenuID) '
+    'body': 'destroyMenu(inMenuID) '
+'messageWindow(x, y, width, height, title, message, buttonsCount, ...) ':
+    'prefix': 'messageWindow(x, y, width, height, title, message, buttonsCount, ...) '
+    'body': 'messageWindow(x, y, width, height, title, message, buttonsCount, ...) '
+'getCamera() ':
+    'prefix': 'getCamera() '
+    'body': 'getCamera() '
+'setCamera(x, y, z, pitch, yaw, roll, zoom) ':
+    'prefix': 'setCamera(x, y, z, pitch, yaw, roll, zoom) '
+    'body': 'setCamera(x, y, z, pitch, yaw, roll, zoom) '
+'registerCameraController(callback) ':
+    'prefix': 'registerCameraController(callback) '
+    'body': 'registerCameraController(callback) '
+'unregisterCameraController(id) ':
+    'prefix': 'unregisterCameraController(id) '
+    'body': 'unregisterCameraController(id) '
+'getCurrentCameraStatus() ':
+    'prefix': 'getCurrentCameraStatus() '
+    'body': 'getCurrentCameraStatus() '
+'startCameraControl(id, status) ':
+    'prefix': 'startCameraControl(id, status) '
+    'body': 'startCameraControl(id, status) '
+'stopCameraControl() ':
+    'prefix': 'stopCameraControl() '
+    'body': 'stopCameraControl() '
+'downloadFileSync(url, path) ':
+    'prefix': 'downloadFileSync(url, path) '
+    'body': 'downloadFileSync(url, path) '
+'downloadFileAsync(url, path, callback) ':
+    'prefix': 'downloadFileAsync(url, path, callback) '
+    'body': 'downloadFileAsync(url, path, callback) '
+'downloadFileContentsSync(url)':
+    'prefix': 'downloadFileContentsSync(url)'
+    'body': 'downloadFileContentsSync(url)'
+'setDownloadTimeout(type, time, speed) ':
+    'prefix': 'setDownloadTimeout(type, time, speed) '
+    'body': 'setDownloadTimeout(type, time, speed) '
+'createTimer() ':
+    'prefix': 'createTimer() '
+    'body': 'createTimer() '
+'createPerformanceTimer() ':
+    'prefix': 'createPerformanceTimer() '
+    'body': 'createPerformanceTimer() '
+'deleteTimer(id) ':
+    'prefix': 'deleteTimer(id) '
+    'body': 'deleteTimer(id) '
+'startTimer(id) ':
+    'prefix': 'startTimer(id) '
+    'body': 'startTimer(id) '
+'pauseTimer(id) ':
+    'prefix': 'pauseTimer(id) '
+    'body': 'pauseTimer(id) '
+'resumeTimer(id) ':
+    'prefix': 'resumeTimer(id) '
+    'body': 'resumeTimer(id) '
+'stopTimer(id) ':
+    'prefix': 'stopTimer(id) '
+    'body': 'stopTimer(id) '
+'resetTimer(id) ':
+    'prefix': 'resetTimer(id) '
+    'body': 'resetTimer(id) '
+'getElapsedSeconds(id) ':
+    'prefix': 'getElapsedSeconds(id) '
+    'body': 'getElapsedSeconds(id) '
+'getElapsedMicroseconds(id) ':
+    'prefix': 'getElapsedMicroseconds(id) '
+    'body': 'getElapsedMicroseconds(id) '
+'getCurrentCycle() ':
+    'prefix': 'getCurrentCycle() '
+    'body': 'getCurrentCycle() '
+'getMyPluginID() ':
+    'prefix': 'getMyPluginID() '
+    'body': 'getMyPluginID() '
+'getMyPluginPath() ':
+    'prefix': 'getMyPluginPath() '
+    'body': 'getMyPluginPath() '
+'getXPlanePath() ':
+    'prefix': 'getXPlanePath() '
+    'body': 'getXPlanePath() '
+'getProjectPath() ':
+    'prefix': 'getProjectPath() '
+    'body': 'getProjectPath() '
+'getProjectName() ':
+    'prefix': 'getProjectName() '
+    'body': 'getProjectName() '
+'getAircraftPath() ':
+    'prefix': 'getAircraftPath() '
+    'body': 'getAircraftPath() '
+'getAircraft() ':
+    'prefix': 'getAircraft() '
+    'body': 'getAircraft() '
+'countPlugins() ':
+    'prefix': 'countPlugins() '
+    'body': 'countPlugins() '
+'getNthPlugin(index) ':
+    'prefix': 'getNthPlugin(index) '
+    'body': 'getNthPlugin(index) '
+'findPluginByPath(path) ':
+    'prefix': 'findPluginByPath(path) '
+    'body': 'findPluginByPath(path) '
+'findPluginBySignature(signature) ':
+    'prefix': 'findPluginBySignature(signature) '
+    'body': 'findPluginBySignature(signature) '
+'getPluginInfo(id) ':
+    'prefix': 'getPluginInfo(id) '
+    'body': 'getPluginInfo(id) '
+'isPluginEnabled(id) ':
+    'prefix': 'isPluginEnabled(id) '
+    'body': 'isPluginEnabled(id) '
+'enablePlugin(id) ':
+    'prefix': 'enablePlugin(id) '
+    'body': 'enablePlugin(id) '
+'disablePlugin(id) ':
+    'prefix': 'disablePlugin(id) '
+    'body': 'disablePlugin(id) '
+'reloadPlugins() ':
+    'prefix': 'reloadPlugins() '
+    'body': 'reloadPlugins() '
+'registerMessageHandler(messageID, type, callback) ':
+    'prefix': 'registerMessageHandler(messageID, type, callback) '
+    'body': 'registerMessageHandler(messageID, type, callback) '
+'unregisterMessageHandler(messageID) ':
+    'prefix': 'unregisterMessageHandler(messageID) '
+    'body': 'unregisterMessageHandler(messageID) '
+'sendMessageToPlugin(id, messageID, type) ':
+    'prefix': 'sendMessageToPlugin(id, messageID, type) '
+    'body': 'sendMessageToPlugin(id, messageID, type) '
+'setAuxiliaryClickSystem(isActive) ':
+    'prefix': 'setAuxiliaryClickSystem(isActive) '
+    'body': 'setAuxiliaryClickSystem(isActive) '
+'setCSDClickInterval(interval) ':
+    'prefix': 'setCSDClickInterval(interval) '
+    'body': 'setCSDClickInterval(interval) '
+'getCSDClickInterval() ':
+    'prefix': 'getCSDClickInterval() '
+    'body': 'getCSDClickInterval() '
+'setCSMode(mode) ':
+    'prefix': 'setCSMode(mode) '
+    'body': 'setCSMode(mode) '
+'getCSMode() ':
+    'prefix': 'getCSMode() '
+    'body': 'getCSMode() '
+'setCSShowCursor(cursorID) ':
+    'prefix': 'setCSShowCursor(cursorID) '
+    'body': 'setCSShowCursor(cursorID) '
+'getCSShowCursor() ':
+    'prefix': 'getCSShowCursor() '
+    'body': 'getCSShowCursor() '
+'setCSWheelInteractionDelay(delay) ':
+    'prefix': 'setCSWheelInteractionDelay(delay) '
+    'body': 'setCSWheelInteractionDelay(delay) '
+'getCSWheelInteractionDelay() ':
+    'prefix': 'getCSWheelInteractionDelay() '
+    'body': 'getCSWheelInteractionDelay() '
+'setCSPassWheelEventFlag(flag) ':
+    'prefix': 'setCSPassWheelEventFlag(flag) '
+    'body': 'setCSPassWheelEventFlag(flag) '
+'setCSCursorScale(scale) ':
+    'prefix': 'setCSCursorScale(scale) '
+    'body': 'setCSCursorScale(scale) '
+'getCSClickDown(buttonID) ':
+    'prefix': 'getCSClickDown(buttonID) '
+    'body': 'getCSClickDown(buttonID) '
+'getCSClickUp(buttonID) ':
+    'prefix': 'getCSClickUp(buttonID) '
+    'body': 'getCSClickUp(buttonID) '
+'getCSClickHold(buttonID) ':
+    'prefix': 'getCSClickHold(buttonID) '
+    'body': 'getCSClickHold(buttonID) '
+'getCSDoubleClick(buttonID) ':
+    'prefix': 'getCSDoubleClick(buttonID) '
+    'body': 'getCSDoubleClick(buttonID) '
+'getCSWheelClicks() ':
+    'prefix': 'getCSWheelClicks() '
+    'body': 'getCSWheelClicks() '
+'getCSMouseXPos() ':
+    'prefix': 'getCSMouseXPos() '
+    'body': 'getCSMouseXPos() '
+'getCSMouseYPos() ':
+    'prefix': 'getCSMouseYPos() '
+    'body': 'getCSMouseYPos() '
+'getCSDragDirection() ':
+    'prefix': 'getCSDragDirection() '
+    'body': 'getCSDragDirection() '
+'getCSDragValue() ':
+    'prefix': 'getCSDragValue() '
+    'body': 'getCSDragValue() '
+'getCSCursorOnInterface() ':
+    'prefix': 'getCSCursorOnInterface() '
+    'body': 'getCSCursorOnInterface() '
+'getCSMouseIsOnPanel() ':
+    'prefix': 'getCSMouseIsOnPanel() '
+    'body': 'getCSMouseIsOnPanel() '
+'getCSPanelMousePos() ':
+    'prefix': 'getCSPanelMousePos() '
+    'body': 'getCSPanelMousePos() '
+'registerGlobalKeyHandler(callback) ':
+    'prefix': 'registerGlobalKeyHandler(callback) '
+    'body': 'registerGlobalKeyHandler(callback) '
+'unregisterGlobalKeyHandler(id) ':
+    'prefix': 'unregisterGlobalKeyHandler(id) '
+    'body': 'unregisterGlobalKeyHandler(id) '
+'registerHotKey(key, shiftDown, ctrlDown, altOptDown, description, callback) ':
+    'prefix': 'registerHotKey(key, shiftDown, ctrlDown, altOptDown, description, callback) '
+    'body': 'registerHotKey(key, shiftDown, ctrlDown, altOptDown, description, callback) '
+'unregisterHotKey(id) ':
+    'prefix': 'unregisterHotKey(id) '
+    'body': 'unregisterHotKey(id) '
+'setHotKeyCombination(id, key, shiftDown, ctrlDown, altOptDown) ':
+    'prefix': 'setHotKeyCombination(id, key, shiftDown, ctrlDown, altOptDown) '
+    'body': 'setHotKeyCombination(id, key, shiftDown, ctrlDown, altOptDown) '
+'getFirstNavAid() ':
+    'prefix': 'getFirstNavAid() '
+    'body': 'getFirstNavAid() '
+'getNextNavAid(id) ':
+    'prefix': 'getNextNavAid(id) '
+    'body': 'getNextNavAid(id) '
+'findFirstNavAidOfType(type) ':
+    'prefix': 'findFirstNavAidOfType(type) '
+    'body': 'findFirstNavAidOfType(type) '
+'findLastNavAidOfType(type) ':
+    'prefix': 'findLastNavAidOfType(type) '
+    'body': 'findLastNavAidOfType(type) '
+'findNavAid(fragmentName, fragmentID, latitude, longitude, frequency, type) ':
+    'prefix': 'findNavAid(fragmentName, fragmentID, latitude, longitude, frequency, type) '
+    'body': 'findNavAid(fragmentName, fragmentID, latitude, longitude, frequency, type) '
+'getNavAidInfo(id) ':
+    'prefix': 'getNavAidInfo(id) '
+    'body': 'getNavAidInfo(id) '
+'countFMSEntries() ':
+    'prefix': 'countFMSEntries() '
+    'body': 'countFMSEntries() '
+'getDisplayedFMSEntry() ':
+    'prefix': 'getDisplayedFMSEntry() '
+    'body': 'getDisplayedFMSEntry() '
+'getDestinationFMSEntry() ':
+    'prefix': 'getDestinationFMSEntry() '
+    'body': 'getDestinationFMSEntry() '
+'setDisplayedFMSEntry(index) ':
+    'prefix': 'setDisplayedFMSEntry(index) '
+    'body': 'setDisplayedFMSEntry(index) '
+'setDestinationFMSEntry(index) ':
+    'prefix': 'setDestinationFMSEntry(index) '
+    'body': 'setDestinationFMSEntry(index) '
+'getFMSEntryInfo(index) ':
+    'prefix': 'getFMSEntryInfo(index) '
+    'body': 'getFMSEntryInfo(index) '
+'setFMSEntryInfo(index, id, altitude) ':
+    'prefix': 'setFMSEntryInfo(index, id, altitude) '
+    'body': 'setFMSEntryInfo(index, id, altitude) '
+'setFMSEntryLatLon(index, latitude, longitude, altitude) ':
+    'prefix': 'setFMSEntryLatLon(index, latitude, longitude, altitude) '
+    'body': 'setFMSEntryLatLon(index, latitude, longitude, altitude) '
+'clearFMSEntry() ':
+    'prefix': 'clearFMSEntry() '
+    'body': 'clearFMSEntry() '
+'getGPSDestinationType() ':
+    'prefix': 'getGPSDestinationType() '
+    'body': 'getGPSDestinationType() '
+'getGPSDestination() ':
+    'prefix': 'getGPSDestination() '
+    'body': 'getGPSDestination() '
+'drawObject(id, x, y, z, pitch, heading, roll, lighting, earthRelative) ':
+    'prefix': 'drawObject(id, x, y, z, pitch, heading, roll, lighting, earthRelative) '
+    'body': 'drawObject(id, x, y, z, pitch, heading, roll, lighting, earthRelative) '
+'reloadScenery() ':
+    'prefix': 'reloadScenery() '
+    'body': 'reloadScenery() '
+'worldToLocal(latitude, longitude, altitude) ':
+    'prefix': 'worldToLocal(latitude, longitude, altitude) '
+    'body': 'worldToLocal(latitude, longitude, altitude) '
+'localToWorld(x, y, z) ':
+    'prefix': 'localToWorld(x, y, z) '
+    'body': 'localToWorld(x, y, z) '
+'modelToLocal(u, v, w) ':
+    'prefix': 'modelToLocal(u, v, w) '
+    'body': 'modelToLocal(u, v, w) '
+'localToModel(x, y, z) ':
+    'prefix': 'localToModel(x, y, z) '
+    'body': 'localToModel(x, y, z) '
+'probeTerrain(x, y, z) ':
+    'prefix': 'probeTerrain(x, y, z) '
+    'body': 'probeTerrain(x, y, z) '
+'getMagneticVariation(latitude, longitude) ':
+    'prefix': 'getMagneticVariation(latitude, longitude) '
+    'body': 'getMagneticVariation(latitude, longitude) '
+'degMagneticToDegTrue(heading) ':
+    'prefix': 'degMagneticToDegTrue(heading) '
+    'body': 'degMagneticToDegTrue(heading) '
+'createInstance(objectId) ':
+    'prefix': 'createInstance(objectId) '
+    'body': 'createInstance(objectId) '
+'destroyInstance(instanceId) ':
+    'prefix': 'destroyInstance(instanceId) '
+    'body': 'destroyInstance(instanceId) '
+'setInstancePosition(instanceId, x, y, z, pitch, heading, roll, data) ':
+    'prefix': 'setInstancePosition(instanceId, x, y, z, pitch, heading, roll, data) '
+    'body': 'setInstancePosition(instanceId, x, y, z, pitch, heading, roll, data) '
+'drawLine(x1, y1, x2, y2, color) ':
+    'prefix': 'drawLine(x1, y1, x2, y2, color) '
+    'body': 'drawLine(x1, y1, x2, y2, color) '
+'drawWideLine(x1, y1, x2, y2, thickness, color) ':
+    'prefix': 'drawWideLine(x1, y1, x2, y2, thickness, color) '
+    'body': 'drawWideLine(x1, y1, x2, y2, thickness, color) '
+'drawPolyLine(points, color) ':
+    'prefix': 'drawPolyLine(points, color) '
+    'body': 'drawPolyLine(points, color) '
+'drawWidePolyLine(points, thickness, color) ':
+    'prefix': 'drawWidePolyLine(points, thickness, color) '
+    'body': 'drawWidePolyLine(points, thickness, color) '
+'drawTriangle(x1, y1, x2, y2, x3, y3, color) ':
+    'prefix': 'drawTriangle(x1, y1, x2, y2, x3, y3, color) '
+    'body': 'drawTriangle(x1, y1, x2, y2, x3, y3, color) '
+'drawRectangle(x, y, width, height, color) ':
+    'prefix': 'drawRectangle(x, y, width, height, color) '
+    'body': 'drawRectangle(x, y, width, height, color) '
+'drawFrame(x, y, width, height, color) ':
+    'prefix': 'drawFrame(x, y, width, height, color) '
+    'body': 'drawFrame(x, y, width, height, color) '
+'setLinePattern(pattern) ':
+    'prefix': 'setLinePattern(pattern) '
+    'body': 'setLinePattern(pattern) '
+'drawLinePattern(x1, y1, x2, y2, savePatternState, color) ':
+    'prefix': 'drawLinePattern(x1, y1, x2, y2, savePatternState, color) '
+    'body': 'drawLinePattern(x1, y1, x2, y2, savePatternState, color) '
+'drawPolyLinePattern(points, color) ':
+    'prefix': 'drawPolyLinePattern(points, color) '
+    'body': 'drawPolyLinePattern(points, color) '
+'drawBezierLineQ(x1, y1, x2, y2, x3, y3, parts, color) ':
+    'prefix': 'drawBezierLineQ(x1, y1, x2, y2, x3, y3, parts, color) '
+    'body': 'drawBezierLineQ(x1, y1, x2, y2, x3, y3, parts, color) '
+'drawWideBezierLineQ(x1, y1, x2, y2, x3, y3, parts, thickness, color) ':
+    'prefix': 'drawWideBezierLineQ(x1, y1, x2, y2, x3, y3, parts, thickness, color) '
+    'body': 'drawWideBezierLineQ(x1, y1, x2, y2, x3, y3, parts, thickness, color) '
+'drawBezierLineQAdaptive(x1, y1, x2, y2, x3, y3, color) ':
+    'prefix': 'drawBezierLineQAdaptive(x1, y1, x2, y2, x3, y3, color) '
+    'body': 'drawBezierLineQAdaptive(x1, y1, x2, y2, x3, y3, color) '
+'drawWideBezierLineQAdaptive(x1, y1, x2, y2, x3, y3, thickness, color) ':
+    'prefix': 'drawWideBezierLineQAdaptive(x1, y1, x2, y2, x3, y3, thickness, color) '
+    'body': 'drawWideBezierLineQAdaptive(x1, y1, x2, y2, x3, y3, thickness, color) '
+'drawBezierLineC(x1, y1, x2, y2, x3, y3, x4, y4, parts, color) ':
+    'prefix': 'drawBezierLineC(x1, y1, x2, y2, x3, y3, x4, y4, parts, color) '
+    'body': 'drawBezierLineC(x1, y1, x2, y2, x3, y3, x4, y4, parts, color) '
+'drawWideBezierLineC(x1, y1, x2, y2, x3, y3, x4, y4, parts, thickness, color) ':
+    'prefix': 'drawWideBezierLineC(x1, y1, x2, y2, x3, y3, x4, y4, parts, thickness, color) '
+    'body': 'drawWideBezierLineC(x1, y1, x2, y2, x3, y3, x4, y4, parts, thickness, color) '
+'drawBezierLineCAdaptive(x1, y1, x2, y2, x3, y3, x4, y4, color) ':
+    'prefix': 'drawBezierLineCAdaptive(x1, y1, x2, y2, x3, y3, x4, y4, color) '
+    'body': 'drawBezierLineCAdaptive(x1, y1, x2, y2, x3, y3, x4, y4, color) '
+'drawWideBezierLineCAdaptive(x1, y1, x2, y2, x3, y3, x4, y4, thickness, color) ':
+    'prefix': 'drawWideBezierLineCAdaptive(x1, y1, x2, y2, x3, y3, x4, y4, thickness, color) '
+    'body': 'drawWideBezierLineCAdaptive(x1, y1, x2, y2, x3, y3, x4, y4, thickness, color) '
+'drawCircle(x, y, radius, isFilled, color) ':
+    'prefix': 'drawCircle(x, y, radius, isFilled, color) '
+    'body': 'drawCircle(x, y, radius, isFilled, color) '
+'drawArc(x, y, radiusInner, radiusOuter, startAngle, arcAngle, color) ':
+    'prefix': 'drawArc(x, y, radiusInner, radiusOuter, startAngle, arcAngle, color) '
+    'body': 'drawArc(x, y, radiusInner, radiusOuter, startAngle, arcAngle, color) '
+'drawArcLine(x, y, radius, startAngle, arcAngle, color) ':
+    'prefix': 'drawArcLine(x, y, radius, startAngle, arcAngle, color) '
+    'body': 'drawArcLine(x, y, radius, startAngle, arcAngle, color) '
+'drawConvexPolygon(points, isFilled, thickness, color)':
+    'prefix': 'drawConvexPolygon(points, isFilled, thickness, color)'
+    'body': 'drawConvexPolygon(points, isFilled, thickness, color)'
+'setPolygonExtrudeMode(mode) ':
+    'prefix': 'setPolygonExtrudeMode(mode) '
+    'body': 'setPolygonExtrudeMode(mode) '
+'setWideLineExtrudeMode(mode) ':
+    'prefix': 'setWideLineExtrudeMode(mode) '
+    'body': 'setWideLineExtrudeMode(mode) '
+'setInternalLineWidth(width) ':
+    'prefix': 'setInternalLineWidth(width) '
+    'body': 'setInternalLineWidth(width) '
+'setInternalLineStipple(enabled) ':
+    'prefix': 'setInternalLineStipple(enabled) '
+    'body': 'setInternalLineStipple(enabled) '
+'saveInternalLineState() ':
+    'prefix': 'saveInternalLineState() '
+    'body': 'saveInternalLineState() '
+'restoreInternalLineState() ':
+    'prefix': 'restoreInternalLineState() '
+    'body': 'restoreInternalLineState() '
+'drawTexture(id, x, y, width, height, color) ':
+    'prefix': 'drawTexture(id, x, y, width, height, color) '
+    'body': 'drawTexture(id, x, y, width, height, color) '
+'drawRotatedTexture(id, angle, x, y, width, height, color) ':
+    'prefix': 'drawRotatedTexture(id, angle, x, y, width, height, color) '
+    'body': 'drawRotatedTexture(id, angle, x, y, width, height, color) '
+'drawRotatedTextureCenter(id, angle, rx, ry, x, y, width, height, color) ':
+    'prefix': 'drawRotatedTextureCenter(id, angle, rx, ry, x, y, width, height, color) '
+    'body': 'drawRotatedTextureCenter(id, angle, rx, ry, x, y, width, height, color) '
+'drawTexturePart(id, x, y, width, height, tx, ty, twidth, theight, color) ':
+    'prefix': 'drawTexturePart(id, x, y, width, height, tx, ty, twidth, theight, color) '
+    'body': 'drawTexturePart(id, x, y, width, height, tx, ty, twidth, theight, color) '
+'drawRotatedTexturePart(id, angle, x, y, width, height, tx, ty, twidth, theight, color) ':
+    'prefix': 'drawRotatedTexturePart(id, angle, x, y, width, height, tx, ty, twidth, theight, color) '
+    'body': 'drawRotatedTexturePart(id, angle, x, y, width, height, tx, ty, twidth, theight, color) '
+'drawRotatedTexturePartCenter(id, angle, rx, ry, x, y, width, height, tx, ty, twidth, theight, color) ':
+    'prefix': 'drawRotatedTexturePartCenter(id, angle, rx, ry, x, y, width, height, tx, ty, twidth, theight, color) '
+    'body': 'drawRotatedTexturePartCenter(id, angle, rx, ry, x, y, width, height, tx, ty, twidth, theight, color) '
+'drawTextureCoords(id, x1, y1, x2, y2, x3, y3, x4, y4, color) ':
+    'prefix': 'drawTextureCoords(id, x1, y1, x2, y2, x3, y3, x4, y4, color) '
+    'body': 'drawTextureCoords(id, x1, y1, x2, y2, x3, y3, x4, y4, color) '
+'drawTextureWithRotatedCoords(id, angle, x, y, width, height, tx, ty, twidth, theight) ':
+    'prefix': 'drawTextureWithRotatedCoords(id, angle, x, y, width, height, tx, ty, twidth, theight) '
+    'body': 'drawTextureWithRotatedCoords(id, angle, x, y, width, height, tx, ty, twidth, theight) '
+'getTextureSize(id) ':
+    'prefix': 'getTextureSize(id) '
+    'body': 'getTextureSize(id) '
+'getTextureSourceSize(id) ':
+    'prefix': 'getTextureSourceSize(id) '
+    'body': 'getTextureSourceSize(id) '
+'setTextureWrapping(id, mode) ':
+    'prefix': 'setTextureWrapping(id, mode) '
+    'body': 'setTextureWrapping(id, mode) '
+'importTexture(inSpecID) ':
+    'prefix': 'importTexture(inSpecID) '
+    'body': 'importTexture(inSpecID) '
+'recreateTexture(id, width, height, saveContents) ':
+    'prefix': 'recreateTexture(id, width, height, saveContents) '
+    'body': 'recreateTexture(id, width, height, saveContents) '
+'setRenderTarget(id, isNeedClear, inAALevel) ':
+    'prefix': 'setRenderTarget(id, isNeedClear, inAALevel) '
+    'body': 'setRenderTarget(id, isNeedClear, inAALevel) '
+'clearRenderTarget(x, y, width, height) ':
+    'prefix': 'clearRenderTarget(x, y, width, height) '
+    'body': 'clearRenderTarget(x, y, width, height) '
+'restoreRenderTarget() ':
+    'prefix': 'restoreRenderTarget() '
+    'body': 'restoreRenderTarget() '
+'createRenderTarget(width, height) ':
+    'prefix': 'createRenderTarget(width, height) '
+    'body': 'createRenderTarget(width, height) '
+'destroyRenderTarget(id) ':
+    'prefix': 'destroyRenderTarget(id) '
+    'body': 'destroyRenderTarget(id) '
+'createTexture(width, height) ':
+    'prefix': 'createTexture(width, height) '
+    'body': 'createTexture(width, height) '
+'getTargetTextureData(id, x, y, width, height) ':
+    'prefix': 'getTargetTextureData(id, x, y, width, height) '
+    'body': 'getTargetTextureData(id, x, y, width, height) '
+'createTextureDataStorage(width, height) ':
+    'prefix': 'createTextureDataStorage(width, height) '
+    'body': 'createTextureDataStorage(width, height) '
+'deleteTextureDataStorage(id) ':
+    'prefix': 'deleteTextureDataStorage(id) '
+    'body': 'deleteTextureDataStorage(id) '
+'getTextureDataPointer(id) ':
+    'prefix': 'getTextureDataPointer(id) '
+    'body': 'getTextureDataPointer(id) '
+'getRawTextureData(textID, storageID) ':
+    'prefix': 'getRawTextureData(textID, storageID) '
+    'body': 'getRawTextureData(textID, storageID) '
+'setRawTextureData(textID, storageID) ':
+    'prefix': 'setRawTextureData(textID, storageID) '
+    'body': 'setRawTextureData(textID, storageID) '
+'imageFromTexture(filename, textID) ':
+    'prefix': 'imageFromTexture(filename, textID) '
+    'body': 'imageFromTexture(filename, textID) '
+'drawBitmapText(id, x, y, text, alignment, color) ':
+    'prefix': 'drawBitmapText(id, x, y, text, alignment, color) '
+    'body': 'drawBitmapText(id, x, y, text, alignment, color) '
+'drawRotatedBitmapText(id, cx, cy, angle, x, y, text, alignment, color) ':
+    'prefix': 'drawRotatedBitmapText(id, cx, cy, angle, x, y, text, alignment, color) '
+    'body': 'drawRotatedBitmapText(id, cx, cy, angle, x, y, text, alignment, color) '
+'measureBitmapText(id, text) ':
+    'prefix': 'measureBitmapText(id, text) '
+    'body': 'measureBitmapText(id, text) '
+'measureBitmapTextGlyphs(id, text) ':
+    'prefix': 'measureBitmapTextGlyphs(id, text) '
+    'body': 'measureBitmapTextGlyphs(id, text) '
+'setFontOutlineThickness(id, outlineThickness) ':
+    'prefix': 'setFontOutlineThickness(id, outlineThickness) '
+    'body': 'setFontOutlineThickness(id, outlineThickness) '
+'setFontOutlineColor(id, color) ':
+    'prefix': 'setFontOutlineColor(id, color) '
+    'body': 'setFontOutlineColor(id, color) '
+'setFontRenderMode(id, mode, value)':
+    'prefix': 'setFontRenderMode(id, mode, value)'
+    'body': 'setFontRenderMode(id, mode, value)'
+'setFontSize(id, size) ':
+    'prefix': 'setFontSize(id, size) '
+    'body': 'setFontSize(id, size) '
+'setFontDirection(id, mode) ':
+    'prefix': 'setFontDirection(id, mode) '
+    'body': 'setFontDirection(id, mode) '
+'setFontBold(id, isBold) ':
+    'prefix': 'setFontBold(id, isBold) '
+    'body': 'setFontBold(id, isBold) '
+'setFontItalic(id, isItalic) ':
+    'prefix': 'setFontItalic(id, isItalic) '
+    'body': 'setFontItalic(id, isItalic) '
+'setFontBckMode(id, mode) ':
+    'prefix': 'setFontBckMode(id, mode) '
+    'body': 'setFontBckMode(id, mode) '
+'setFontBckColor(id, color) ':
+    'prefix': 'setFontBckColor(id, color) '
+    'body': 'setFontBckColor(id, color) '
+'setFontBckPadding(id, left, top, right, bottom) ':
+    'prefix': 'setFontBckPadding(id, left, top, right, bottom) '
+    'body': 'setFontBckPadding(id, left, top, right, bottom) '
+'setFontGlyphSpacingFactor(id, factor) ':
+    'prefix': 'setFontGlyphSpacingFactor(id, factor) '
+    'body': 'setFontGlyphSpacingFactor(id, factor) '
+'setFontUnicode(id, unicode) ':
+    'prefix': 'setFontUnicode(id, unicode) '
+    'body': 'setFontUnicode(id, unicode) '
+'saveFontState(id) ':
+    'prefix': 'saveFontState(id) '
+    'body': 'saveFontState(id) '
+'restoreFontState(id) ':
+    'prefix': 'restoreFontState(id) '
+    'body': 'restoreFontState(id) '
+'setRenderTextPixelAligned(enabled) ':
+    'prefix': 'setRenderTextPixelAligned(enabled) '
+    'body': 'setRenderTextPixelAligned(enabled) '
+'drawText(id, x, y, text, size, isBold, isItalic, alignment, color) ':
+    'prefix': 'drawText(id, x, y, text, size, isBold, isItalic, alignment, color) '
+    'body': 'drawText(id, x, y, text, size, isBold, isItalic, alignment, color) '
+'drawTextI(id, x, y, text, alignment, color) ':
+    'prefix': 'drawTextI(id, x, y, text, alignment, color) '
+    'body': 'drawTextI(id, x, y, text, alignment, color) '
+'drawRotatedText(id, x, y, cx, cy, angle, text, size, isBold, isItalic, alignment, color) ':
+    'prefix': 'drawRotatedText(id, x, y, cx, cy, angle, text, size, isBold, isItalic, alignment, color) '
+    'body': 'drawRotatedText(id, x, y, cx, cy, angle, text, size, isBold, isItalic, alignment, color) '
+'drawRotatedTextI(id, x, y, cx, cy, angle, text, alignment, color) ':
+    'prefix': 'drawRotatedTextI(id, x, y, cx, cy, angle, text, alignment, color) '
+    'body': 'drawRotatedTextI(id, x, y, cx, cy, angle, text, alignment, color) '
+'measureText(id, text, size, isBold, isItalic) ':
+    'prefix': 'measureText(id, text, size, isBold, isItalic) '
+    'body': 'measureText(id, text, size, isBold, isItalic) '
+'measureTextGlyphs(id, text, size, isBold) ':
+    'prefix': 'measureTextGlyphs(id, text, size, isBold) '
+    'body': 'measureTextGlyphs(id, text, size, isBold) '
+'measureTextI(id, text) ':
+    'prefix': 'measureTextI(id, text) '
+    'body': 'measureTextI(id, text) '
+'measureTextGlyphsI(id, text) ':
+    'prefix': 'measureTextGlyphsI(id, text) '
+    'body': 'measureTextGlyphsI(id, text) '
+'createShaderProgram() ':
+    'prefix': 'createShaderProgram() '
+    'body': 'createShaderProgram() '
+'deleteShaderProgram(id) ':
+    'prefix': 'deleteShaderProgram(id) '
+    'body': 'deleteShaderProgram(id) '
+'linkShaderProgram(id) ':
+    'prefix': 'linkShaderProgram(id) '
+    'body': 'linkShaderProgram(id) '
+'setShaderUniform(shaderID, name, TYPE_SAMPLER, textureID, textureUnit) ':
+    'prefix': 'setShaderUniform(shaderID, name, TYPE_SAMPLER, textureID, textureUnit) '
+    'body': 'setShaderUniform(shaderID, name, TYPE_SAMPLER, textureID, textureUnit) '
+'useShaderProgram(id) ':
+    'prefix': 'useShaderProgram(id) '
+    'body': 'useShaderProgram(id) '
+'stopShaderProgram() ':
+    'prefix': 'stopShaderProgram() '
+    'body': 'stopShaderProgram() '
+'setBlendFunction(sourceBlend, destBlend) ':
+    'prefix': 'setBlendFunction(sourceBlend, destBlend) '
+    'body': 'setBlendFunction(sourceBlend, destBlend) '
+'setBlendFunctionSeparate(sourceBlendRGB, destBlendRGB, sourceBlendAlpha, destBlendAlpha) ':
+    'prefix': 'setBlendFunctionSeparate(sourceBlendRGB, destBlendRGB, sourceBlendAlpha, destBlendAlpha) '
+    'body': 'setBlendFunctionSeparate(sourceBlendRGB, destBlendRGB, sourceBlendAlpha, destBlendAlpha) '
+'setBlendEquation(id) ':
+    'prefix': 'setBlendEquation(id) '
+    'body': 'setBlendEquation(id) '
+'setBlendEquationSeparate(equationIDRGB, equationIDAlpha) ':
+    'prefix': 'setBlendEquationSeparate(equationIDRGB, equationIDAlpha) '
+    'body': 'setBlendEquationSeparate(equationIDRGB, equationIDAlpha) '
+'setBlendColor(color) ':
+    'prefix': 'setBlendColor(color) '
+    'body': 'setBlendColor(color) '
+'resetBlending() ':
+    'prefix': 'resetBlending() '
+    'body': 'resetBlending() '
+'setClipArea(x, y, width, height) ':
+    'prefix': 'setClipArea(x, y, width, height) '
+    'body': 'setClipArea(x, y, width, height) '
+'resetClipArea() ':
+    'prefix': 'resetClipArea() '
+    'body': 'resetClipArea() '
+'drawMaskStart() ':
+    'prefix': 'drawMaskStart() '
+    'body': 'drawMaskStart() '
+'drawUnderMask(invertMaskLogic) ':
+    'prefix': 'drawUnderMask(invertMaskLogic) '
+    'body': 'drawUnderMask(invertMaskLogic) '
+'drawMaskEnd() ':
+    'prefix': 'drawMaskEnd() '
+    'body': 'drawMaskEnd() '
+'saveGraphicsContext() ':
+    'prefix': 'saveGraphicsContext() '
+    'body': 'saveGraphicsContext() '
+'restoreGraphicsContext() ':
+    'prefix': 'restoreGraphicsContext() '
+    'body': 'restoreGraphicsContext() '
+'setTranslateTransform(x, y) ':
+    'prefix': 'setTranslateTransform(x, y) '
+    'body': 'setTranslateTransform(x, y) '
+'setRotateTransform(angle) ':
+    'prefix': 'setRotateTransform(angle) '
+    'body': 'setRotateTransform(angle) '
+'setScaleTransform(scaleX, scaleY) ':
+    'prefix': 'setScaleTransform(scaleX, scaleY) '
+    'body': 'setScaleTransform(scaleX, scaleY) '
+'isLitStage() ':
+    'prefix': 'isLitStage() '
+    'body': 'isLitStage() '
+'isNonLitStage() ':
+    'prefix': 'isNonLitStage() '
+    'body': 'isNonLitStage() '
+'isPanelBeforeStage() ':
+    'prefix': 'isPanelBeforeStage() '
+    'body': 'isPanelBeforeStage() '
+'isPanelAfterStage() ':
+    'prefix': 'isPanelAfterStage() '
+    'body': 'isPanelAfterStage() '
+'drawLine3D(x1, y1, z1, x2, y2, z2, color) ':
+    'prefix': 'drawLine3D(x1, y1, z1, x2, y2, z2, color) '
+    'body': 'drawLine3D(x1, y1, z1, x2, y2, z2, color) '
+'drawTriangle3D(x1, y1, z1, x2, y2, z2, x3, y3, z3, color) ':
+    'prefix': 'drawTriangle3D(x1, y1, z1, x2, y2, z2, x3, y3, z3, color) '
+    'body': 'drawTriangle3D(x1, y1, z1, x2, y2, z2, x3, y3, z3, color) '
+'drawCircle3D(x, y, z, radius, pitch, yaw, isFilled, color) ':
+    'prefix': 'drawCircle3D(x, y, z, radius, pitch, yaw, isFilled, color) '
+    'body': 'drawCircle3D(x, y, z, radius, pitch, yaw, isFilled, color) '
+'drawAngle3D(x, y, z, angle, length, rays, pitch, yaw, color) ':
+    'prefix': 'drawAngle3D(x, y, z, angle, length, rays, pitch, yaw, color) '
+    'body': 'drawAngle3D(x, y, z, angle, length, rays, pitch, yaw, color) '
+'drawStandingCone3D(x, y, z, radius, height, color) ':
+    'prefix': 'drawStandingCone3D(x, y, z, radius, height, color) '
+    'body': 'drawStandingCone3D(x, y, z, radius, height, color) '
+'saveGraphicsState3D() ':
+    'prefix': 'saveGraphicsState3D() '
+    'body': 'saveGraphicsState3D() '
+'restoreGraphicsContext3D() ':
+    'prefix': 'restoreGraphicsContext3D() '
+    'body': 'restoreGraphicsContext3D() '
+'setTranslateTransform3D(x, y, z) ':
+    'prefix': 'setTranslateTransform3D(x, y, z) '
+    'body': 'setTranslateTransform3D(x, y, z) '
+'setRotateTransformX3D(angle) ':
+    'prefix': 'setRotateTransformX3D(angle) '
+    'body': 'setRotateTransformX3D(angle) '
+'setRotateTransformY3D(angle) ':
+    'prefix': 'setRotateTransformY3D(angle) '
+    'body': 'setRotateTransformY3D(angle) '
+'setRotateTransform3D(angle, x, y, z) ':
+    'prefix': 'setRotateTransform3D(angle, x, y, z) '
+    'body': 'setRotateTransform3D(angle, x, y, z) '
+'setScaleTransform3D(x, y, z) ':
+    'prefix': 'setScaleTransform3D(x, y, z) '
+    'body': 'setScaleTransform3D(x, y, z) '
+'loadSample(fileName, isNeedTimer, isNeedReversed) ':
+    'prefix': 'loadSample(fileName, isNeedTimer, isNeedReversed) '
+    'body': 'loadSample(fileName, isNeedTimer, isNeedReversed) '
+'unloadSample(id) ':
+    'prefix': 'unloadSample(id) '
+    'body': 'unloadSample(id) '
+'playSample(id, isLooping) ':
+    'prefix': 'playSample(id, isLooping) '
+    'body': 'playSample(id, isLooping) '
+'stopSample(id) ':
+    'prefix': 'stopSample(id) '
+    'body': 'stopSample(id) '
+'pauseSample(id) ':
+    'prefix': 'pauseSample(id) '
+    'body': 'pauseSample(id) '
+'rewindSample(id) ':
+    'prefix': 'rewindSample(id) '
+    'body': 'rewindSample(id) '
+'isSamplePlaying(id) ':
+    'prefix': 'isSamplePlaying(id) '
+    'body': 'isSamplePlaying(id) '
+'getSamplePlayingRemaining(id) ':
+    'prefix': 'getSamplePlayingRemaining(id) '
+    'body': 'getSamplePlayingRemaining(id) '
+'setSampleGain(id, gain) ':
+    'prefix': 'setSampleGain(id, gain) '
+    'body': 'setSampleGain(id, gain) '
+'setMasterGain(gain) ':
+    'prefix': 'setMasterGain(gain) '
+    'body': 'setMasterGain(gain) '
+'setMinimumSampleGain(id, minGain) ':
+    'prefix': 'setMinimumSampleGain(id, minGain) '
+    'body': 'setMinimumSampleGain(id, minGain) '
+'setMaximumSampleGain(id, maxGain) ':
+    'prefix': 'setMaximumSampleGain(id, maxGain) '
+    'body': 'setMaximumSampleGain(id, maxGain) '
+'setSamplePitch(id, pitch) ':
+    'prefix': 'setSamplePitch(id, pitch) '
+    'body': 'setSamplePitch(id, pitch) '
+'setSampleOffset(id, offset) ':
+    'prefix': 'setSampleOffset(id, offset) '
+    'body': 'setSampleOffset(id, offset) '
+'getSampleOffset(id) ':
+    'prefix': 'getSampleOffset(id) '
+    'body': 'getSampleOffset(id) '
+'getSampleDuration(id) ':
+    'prefix': 'getSampleDuration(id) '
+    'body': 'getSampleDuration(id) '
+'setSamplePosition(id, x, y, z) ':
+    'prefix': 'setSamplePosition(id, x, y, z) '
+    'body': 'setSamplePosition(id, x, y, z) '
+'getSamplePosition(id) ':
+    'prefix': 'getSamplePosition(id) '
+    'body': 'getSamplePosition(id) '
+'setSampleDirection(id, x, y, z) ':
+    'prefix': 'setSampleDirection(id, x, y, z) '
+    'body': 'setSampleDirection(id, x, y, z) '
+'getSampleDirection(id) ':
+    'prefix': 'getSampleDirection(id) '
+    'body': 'getSampleDirection(id) '
+'setSampleVelocity(id, x, y, z) ':
+    'prefix': 'setSampleVelocity(id, x, y, z) '
+    'body': 'setSampleVelocity(id, x, y, z) '
+'getSampleVelocity(id) ':
+    'prefix': 'getSampleVelocity(id) '
+    'body': 'getSampleVelocity(id) '
+'setSampleCone(id, outerGain, innerAngle, outerAngle) ':
+    'prefix': 'setSampleCone(id, outerGain, innerAngle, outerAngle) '
+    'body': 'setSampleCone(id, outerGain, innerAngle, outerAngle) '
+'getSampleCone(id) ':
+    'prefix': 'getSampleCone(id) '
+    'body': 'getSampleCone(id) '
+'setSampleEnv(id, env) ':
+    'prefix': 'setSampleEnv(id, env) '
+    'body': 'setSampleEnv(id, env) '
+'getSampleEnv(id) ':
+    'prefix': 'getSampleEnv(id) '
+    'body': 'getSampleEnv(id) '
+'setSampleRelative(id, isRelative) ':
+    'prefix': 'setSampleRelative(id, isRelative) '
+    'body': 'setSampleRelative(id, isRelative) '
+'getSampleRelative(id) ':
+    'prefix': 'getSampleRelative(id) '
+    'body': 'getSampleRelative(id) '
+'setSampleMaxDistance(id, distance) ':
+    'prefix': 'setSampleMaxDistance(id, distance) '
+    'body': 'setSampleMaxDistance(id, distance) '
+'setSampleRolloffFactor(id, factor) ':
+    'prefix': 'setSampleRolloffFactor(id, factor) '
+    'body': 'setSampleRolloffFactor(id, factor) '
+'setSampleRefDistance(id, distance) ':
+    'prefix': 'setSampleRefDistance(id, distance) '
+    'body': 'setSampleRefDistance(id, distance) '
+'defineProperty(name, inValue) end':
+    'prefix': 'defineProperty(name, inValue) end'
+    'body': 'defineProperty(name, inValue) end'
+'startProcessSync(path, args, toStdIn, stdOutToString, stdErrToString) end':
+    'prefix': 'startProcessSync(path, args, toStdIn, stdOutToString, stdErrToString) end'
+    'body': 'startProcessSync(path, args, toStdIn, stdOutToString, stdErrToString) end'
+'startProcessAsync(path, args, toStdIn, stdOutToString, stdErrToString, callback) end':
+    'prefix': 'startProcessAsync(path, args, toStdIn, stdOutToString, stdErrToString, callback) end'
+    'body': 'startProcessAsync(path, args, toStdIn, stdOutToString, stdErrToString, callback) end'
+'readConfig(pathToFile, format) end':
+    'prefix': 'readConfig(pathToFile, format) end'
+    'body': 'readConfig(pathToFile, format) end'
+'writeConfig(pathToFile, format, t) end':
+    'prefix': 'writeConfig(pathToFile, format, t) end'
+    'body': 'writeConfig(pathToFile, format, t) end'
