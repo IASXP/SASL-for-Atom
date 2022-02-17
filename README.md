@@ -1,6 +1,6 @@
 # SASL-for-Atom
 Essentially the same as my SASL-for-VSCode snippets file.
-NOT TESTED ON MAC OR LINUX; I DO NOT KNOW WHERE TO PUT IT.
+NOT TESTED ON MAC OR LINUX
 ### AFAIK You Cannot Have More Than One Snippets File In Atom.
 
 ## Users On Windows:
